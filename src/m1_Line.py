@@ -226,6 +226,14 @@ class Line(object):
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
 
+
+        self.start = start.clone()
+        self.end = end.clone()
+
+
+
+
+
     def __repr__(self):
         """
         What comes in:
@@ -334,6 +342,12 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        start = self.start.clone()
+        end = self.end.clone()
+        return Line(start, end)
+
+
+
 
     def reverse(self):
         """
@@ -368,6 +382,13 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # ---------------------------------------------------------------------
+        initial_start = self.start.clone()
+        initial_end = self.end.clone()
+        start = self.initial_end.clone()
+        end = self.intinial_start.clone()
+        return Line(start, end)
+
+
 
     def slope(self):
         """
